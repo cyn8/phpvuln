@@ -1,6 +1,6 @@
 <?php
 session_start();
-$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'user', 'password');
+$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'root', 'password123!');
 $reponse = $bdd->query('SELECT * FROM chat ORDER BY id');
 ?>
 <link href="bootstrap.css" rel="stylesheet" id="bootstrap-css">

@@ -2,7 +2,7 @@
   if(!isset($_GET['id']) || $_GET['id'] == ''){
   	header('Location: index.php');
   }
- $bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'user', 'password');
+ $bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'root', 'password123!');
 $reponse = $bdd->query("SELECT * FROM users WHERE id=".$_GET['id']);
 $data = $reponse->fetch();
 ?>

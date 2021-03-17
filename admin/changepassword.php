@@ -3,7 +3,7 @@ session_start();
 if($_SESSION['username'] == "" || !isset($_SESSION['username'])){
   header('Location: login.php');
 }
-$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'user', 'password');
+$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'root', 'password123!');
 $reponse = $bdd->query("SELECT * FROM users");
 ?>
 <!DOCTYPE html>

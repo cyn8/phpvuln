@@ -79,7 +79,7 @@ if($_SESSION['username'] == "" || !isset($_SESSION['username'])){
 		  </thead>
 		  <tbody>
         <?php
-        	$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'user', 'password');
+        	$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'root', 'password123!');
         	$reponse = $bdd->query('SELECT * FROM users');
         	while ($data = $reponse->fetch()) {
         		echo "<tr>";

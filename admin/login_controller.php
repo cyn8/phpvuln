@@ -6,7 +6,7 @@ if(!isset($_POST['username']) || !isset($_POST['password']) || $_POST['username'
 else {
 	$prenom = $_POST['username'];
 	$password = md5($_POST['password']);
-	$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'user', 'password');
+	$bdd = new PDO('mysql:host=db;dbname=noob;charset=utf8', 'root', 'password123!');
 	$reponse = $bdd->query("SELECT * FROM users WHERE prenom='".$prenom."' AND password='".$password."'");
 	$reponse = $reponse->fetch();
 	if($reponse){
