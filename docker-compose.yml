@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: irongoat-php
+    image: phpvuln-web
     ports:
         - 8085:80
     volumes:
@@ -20,8 +20,8 @@ services:
       - 13306:3306
     environment: 
       MYSQL_ROOT_PASSWORD: password123!
-      MYSQL_DATABASE: 1ccb8097d0e9ce9f154608be60224c7c
-      MYSQL_USER: testuser
-      MYSQL_PASSWORD: password123!
+      MYSQL_DATABASE: noob
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
     volumes:
       - ./sql_db:/docker-entrypoint-initdb.d
